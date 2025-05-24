@@ -1,0 +1,64 @@
+ * {
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    display: flex ;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 100vh;
+}
+ 
+.container {
+    display: flex;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+ 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    gap: 30px;
+    width: 200px;
+}
+ 
+#card1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 24px 0px 0px 24px;
+}
+ 
+#card2{
+    background-color: hsl(184, 100%, 22%);
+}
+ 
+#card3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 24px 24px 0px;
+}
+ 
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+ 
+img {
+    width: 60px;
+}
+ 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+ 
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+ 
