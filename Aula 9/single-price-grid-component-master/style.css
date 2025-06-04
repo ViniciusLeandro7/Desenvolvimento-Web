@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Big Shoulders';
+    font-family: 'Karla';
 }
  
 body {
@@ -90,4 +91,57 @@ span{
  
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        width: 100vw;
+        height: 100vh;
+    }
+ 
+    .container {
+        display: grid;
+        width: 340px;
+        height: auto;
+        grid-template-areas:
+            "top"
+            "left"
+            "right";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.200);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+ 
+@media screen and (min-width: 480px) {
+    body {
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        width: 100vw;
+        height: 100vh;
+    }
+   
+    .container {
+        display: grid;
+        width: 620px;
+        height: 460px;
+        grid-template-areas:
+            "top top"
+            "left right";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.200);
+        border-radius: 10px;
+        overflow: hidden;
+    }
 }
