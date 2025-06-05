@@ -1,48 +1,62 @@
-// let qtdEleitores = 0;
-// let voto = 0;
-// let votosLuis = 0 ,votosVinicius = 0 ,votosBruno = 0, nulo_branco = 0;
-// qtdEleitores = Number(prompt(`Digite a quantidade de eleitores:`));
+let qtdEleitores = 0;
+let voto = 0;
+let votosTalita = 0 ,votosVinicius = 0 ,votosLuana = 0, nulo_branco = 0;
+qtdEleitores = Number(prompt(`Digite a quantidade de eleitores:`));
  
-// if (qtdEleitores > 0) {
-//     let cont = 0;
-//     do {
-//         voto = Number(prompt(`Escolha um candidato:\n\n10 - Luis\n13 - Vinicius\n22 -Bruno`));
+if (qtdEleitores > 0) {
+    let cont = 0;
+    do {
+        voto = Number(prompt(`Escolha um candidato:\n\n15 - Talita\n22 - Vinicius\n18 -Luana`));
+        cont++;
+        if (voto == 18) {
+            votosLuana++;
+            continue;
+        }
+        if (voto == 22) {
+            votosVinicius++;
+            continue
+        }
+        if (voto == 15){
+            votosTalita++;
+            continue
+        }
+        if (voto != 18 && voto != 22 && voto != 15){
+            nulo_branco++;
+        }
+    } while (cont <qtdEleitores )
+ 
+    alert (`Resultado das eleições:\n\nLuana: ${votosLuana}\nTalita: ${votosTalita}\nVinicius: ${votosVinicius}\nNulos/Branco: ${nulo_branco}`);
+}
+else {
+    alert(`Digite um valor válido`);
+}
+
+let i =1
+let valor = 0; 
+let total = 0;
+
+
+// let cont = 0, total = 0;
+ 
+// while (true) {
+ 
+//     let num = Number(prompt("Digite um número positivo: "))
+   
+//     if (num >=0 ) {
 //         cont++;
-//         if (voto == 18) {
-//             votosLuana++;
-//             continue;
-//         }
-//         if (voto == 22) {
-//             votosVinicius++;
-//             continue
-//         }
-//         if (voto == 15){
-//             votosTalita++;
-//             continue
-//         }
-//         if (voto != 10 && voto != 13 && voto != 22){
-//             nulo_branco++;
-//         }
-//     } while (cont <qtdEleitores )
+//         total += num;
+//         continue;
+//     }
+//     if (num < 0) {
+//         break;
+//     }
+//     alert("Digite um valor válido");
+   
+// }
  
-//     alert (`Resultado das eleições:\n\nLuana: ${votosLuis}\nVinicius: ${votosVinicius}\nTalita: ${votosBruno}\nNulos/Branco: ${nulo_branco}`);
-// }
-// else {
-//     alert(`Digite um valor válido`);
-// }
+// alert(`Número positivos digitado: ${cont}\n\nTotal: ${total}`);
+ 
 
-// let i =1
-// let valor = 0; 
-// let total = 0;
-
-
-// do{
-//     valor = Number(prompt('Digite o $(1)" valor;'))
-//     total == valor;
-// } while (i < 0)
-//     media = total / $;
-
-//     alert(`´
 
 let opc = 0, itemCarrinho = 0;
  
