@@ -2,48 +2,46 @@ let cinema = [
     ["L","O","L"],
     ["O","O","L"],
     ["L","O","O"]
-]
+];
 
 let continuar = true;
 
 while (continuar) {
-    let mapa = `MAPA DE ASSENTOS (L= LIVRE, O= Ocupado)\n\n`
+    let mapa = `MAPA DE ASSENTOS (L = LIVRE, O = Ocupado)\n\n`;
+    
     for (let i = 0; i < cinema.length; i++) {
-        mapa +=  `Fileira ${i + 1}: ${cine,a[i].join(" ")}\n`
+        mapa += `Fileira ${i + 1}: ${cinema[i].join(" ")}\n`; // Corrigido: "cine,a[i]" para "cinema[i]"
     }
 
-    alert(mapa)
+    alert(mapa);
 
-    let inputFileira = parseInt(prompt("Digite o numero da fileira (1 a 3) ou 'sair'para encerrar"))
+    let inputFileira = prompt("Digite o número da fileira (1 a 3) ou 'sair' para encerrar");
 
     if (inputFileira === null || inputFileira.toLowerCase() === 'sair') {
         continuar = false;
-        break;0
+        break;
     }
 
-    let inputAssento = parseInt(prompt('Digite o número do assento (1 a 3'))
+    let inputAssento = prompt("Digite o número do assento (1 a 3)");
 
-    if(inputAssento === null) {
+    if (inputAssento === null) {
         continuar = false;
-        break
+        break;
     }
 
-    let fileira = inputFileira - 1
-    let assento = inputAssento - 1
+    let fileira = parseInt(inputFileira) - 1;
+    let assento = parseInt(inputAssento) - 1;
 
-    if (!isNaN(Fileira) && isNaN(assento) && fileira >= 0 && fileira < cinema. length && assento >= 0 && assento < cinema[0]. length){
+    if (!isNaN(fileira) && !isNaN(assento) && fileira >= 0 && fileira < cinema.length && assento >= 0 && assento < cinema[0].length) { // Corrigido: "Fileira" para "fileira", e "isNaN(assento)" para "!isNaN(assento)"
         if (cinema[fileira][assento] === "L") {
-            cinema [fileira][assento] = "O"
-            alert("Assento reservado com sicesso!!")
-            }
-            else{
-                alert("Esse assento ja esta ocupado 😢")
-            } 
-
+            cinema[fileira][assento] = "O";
+            alert("Assento reservado com sucesso!!");
+        } else {
+            alert("Esse assento já está ocupado 😢");
+        }
     } else {
-        alert("Posição inválida. Tente novamente!")
+        alert("Posição inválida. Tente novamente!");
     }
-        
 }
 
-alert("Obrigado por usar o sistema de reserva de assentos. Volte Sempre! 😉" );
+alert("Obrigado por usar o sistema de reserva de assentos. Volte sempre! 😉");
