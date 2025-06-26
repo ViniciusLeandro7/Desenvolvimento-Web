@@ -45,3 +45,4 @@ while (continuar) {
 }
 
 alert("Obrigado por usar o sistema de reserva de assentos. Volte sempre! 😉");
+

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #111;
+    line-height: 1.6;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    background-color: #fff;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .auth a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #111;
+    border: 1px solid #aaa;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+  }
+  
+  .text-section {
+    max-width: 500px;
+  }
+  
+  .text-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .text-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 40px;
+  }
+  
+  .brands {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .image-section {
+    position: relative;
+  }
+  
+  .main-image {
+    width: 400px;
+    border-radius: 50%;
+  }
+  
+  .abstract-bg {
+    position: absolute;
+    top: 20px;
+    left: -80px;
+    width: 500px;
+    height: 500px;
+    background: url('images/abstract-pattern.svg') no-repeat center;
+    background-size: contain;
+    z-index: -1;
+  }
+  
