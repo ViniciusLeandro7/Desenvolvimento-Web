@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#elementos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #fffefe;
+}
+
+body {
+    background-color: #dcdcdc;
+}
+
+.rgb {
+    font-size: 20rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type = 'range']{
+    display: inline-block;
+    width: 15rem;
+}
+
+input[type='text']{
+    width: 2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+#inputRed {
+    background-color: ;
+    border: ;
+}
+
+#inputGreen {
+    background-color: ;
+    border: ;
+}
+
+#inputBlue {
+    background-color: ;
+    border: ;
+}
